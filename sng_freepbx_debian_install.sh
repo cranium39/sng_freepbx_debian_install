@@ -114,6 +114,10 @@ while [[ $# -gt 0 ]]; do
 			dahdi=true
 			shift # past argument
 			;;
+		--nodahdi)
+			dahdi=false
+			shift # past argument
+			;;
 		--nochrony)
 			nochrony=true
 			shift # past argument
@@ -340,7 +344,7 @@ install_asterisk() {
 
 	pkg_install asterisk"$astver".0-freepbx-asterisk-modules
 	pkg_install asterisk-version-switch
-	pkg_install asterisk-sounds-*
+	pkg_install asterisk-sounds-ru*
 }
 
 
