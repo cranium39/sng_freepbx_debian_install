@@ -894,7 +894,7 @@ message " Ensure that you either choose DAHDI option so script will configure DA
 message "                                  OR"
 message " Ensure you are running a DAHDI supported Kernel. Current latest supported kernel version is $lat_dahdi_supp_ver."
 
-if [ "$dahdi" ]; then
+if [ "$dahdi" = "true"]; then
     setCurrentStep "Making sure we allow only proper kernel upgrade and version installation"
     check_kernel_compatibility "$kernel_version"
 fi
