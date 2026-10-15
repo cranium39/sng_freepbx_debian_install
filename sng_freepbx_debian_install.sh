@@ -344,7 +344,7 @@ install_asterisk() {
 
 	pkg_install asterisk"$astver".0-freepbx-asterisk-modules
 	pkg_install asterisk-version-switch
-	pkg_install asterisk-sounds-ru*
+	pkg_install asterisk-core-sounds-ru-*
 }
 
 
